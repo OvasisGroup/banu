@@ -39,8 +39,10 @@ export default function ContactForm() {
         <section>
             <Navbar />
             <section className="bg-[url('/assets/images/contacts.jpg')] bg-no-repeat bg-cover bg-center h-70 mt-20">
-            <h1>Contact Us</h1>
-            <p>Home | Contacts </p>
+            <div className="container mx-auto flex flex-col justify-center items-start text-white h-full px-4">
+                <h1 className="font-bold text-3xl md:text-4xl mb-4">Contact Us</h1>
+                <p>Home | Contacts </p>
+            </div>
             </section>
             <div className="container mx-auto px-4 py-8">
                 <div className='grid md:grid-cols-2 gap-4 justify-center items-center'>
