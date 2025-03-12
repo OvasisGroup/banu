@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className='bg-black text-white mt-10'>
+    <div className='bg-gray-900 text-white mt-10'>
         <div className='container mx-auto px-4 py-10'>
         <div className='grid md:grid-cols-3 gap-6'>
             <div className=''>
@@ -16,10 +16,10 @@ export default function Footer() {
             </div>
             <div className=''>
                 <p className='font-black text-xl text-amber-400'>Quick Links</p>
-                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1'>About</p></Link>
-                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1'>Services</p></Link>
-                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1'>Faq</p></Link>
-                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1'>Pricing</p></Link>
+                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1 border-b-gray-700'>About</p></Link>
+                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1 border-b-gray-700'>Services</p></Link>
+                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1 border-b-gray-700'>Faq</p></Link>
+                <Link href={'/'}><p className='font-bold cursor-pointer py-2 border-b-1 border-b-gray-700'>Pricing</p></Link>
             </div>
             <div className='md:text-right'>
             <p className='font-black text-xl text-amber-400 md:text-right'>Quick Links</p>
