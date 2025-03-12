@@ -11,6 +11,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import LogOut from "./sign-out"
 
 
 const items = [
@@ -81,7 +82,9 @@ export function AppSidebar() {
                 </SidebarGroupContent>
                 <SidebarGroup />
             </SidebarContent>
-            <SidebarFooter>asdfasfas</SidebarFooter>
+            <SidebarFooter>
+                <LogOut/>
+            </SidebarFooter>
         </Sidebar>
     )
 }
