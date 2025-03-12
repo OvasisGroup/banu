@@ -1,7 +1,13 @@
-import React from 'react'
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
 
-export default function Dashboard() {
+const Dashboard = async () => {
+    const session = await auth();
+    if (!session) redirect("/");
+
   return (
     <div>Dashboard</div>
   )
-}
+};
+
+export default Dashboard;
