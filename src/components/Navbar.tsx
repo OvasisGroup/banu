@@ -56,14 +56,23 @@ useEffect(() => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-white shadow-md p-4">
-          <Link href="/" className="block py-2 text-gray-700 hover:text-blue-500">
-            Home
+          <Link href="/" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+            Home <ArrowUpRight className='text-amber-400'/>
           </Link>
-          <Link href="/about" className="block py-2 text-gray-700 hover:text-blue-500">
-            About
+          <Link href="/services" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+            Services <ArrowUpRight className='text-amber-400'/>
           </Link>
-          <Link href="/contact" className="block py-2 text-gray-700 hover:text-blue-500">
-            Contact
+          <Link href="/about" className=" block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+            About Us <ArrowUpRight className='text-amber-400'/>
+          </Link>
+          <Link href="/" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+            Pricing <ArrowUpRight className='text-amber-400'/>
+          </Link>
+          <Link href="/" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+            Contacts <ArrowUpRight className='text-amber-400'/>
+          </Link>
+          <Link href="/dashboard" className="block flex flex-row justify-between text-gray-700 hover:text-blue-500">
+          <Button className='w-full border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight className='bg-white rounded'/></Button>
           </Link>
         </div>
       )}
