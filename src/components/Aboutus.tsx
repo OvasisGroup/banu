@@ -46,21 +46,21 @@ export default function Aboutus() {
                     </div>
                 </div>
                 <div className='grid md:grid-cols-4 gap-10 justify-center items-center mt-10 '>
-                    <div className='flex flex-col justify-start items-start border-1 p-10 rounded-3xl'>
+                    <div className='flex flex-col justify-start items-start border-1 border-amber-400 p-10 rounded-3xl'>
                     <div className='bg-amber-400 p-6 rounded-4xl mb-4'><Image src='/assets/images/book-keeping.png' width={50} height={50} alt='book keeping' className='' /></div>
-                        <p className='font-black text-2xl '>Book Keeping And Accounting</p>
+                        <p className='font-black text-xl '>Book Keeping And Accounting</p>
                     </div>
-                    <div className='flex flex-col justify-start items-start border-1 p-10 rounded-3xl'>
+                    <div className='flex flex-col justify-start items-start border-1 border-amber-400 p-10 rounded-3xl'>
                     <div className='bg-amber-400 p-6 rounded-4xl mb-4'><Image src='/assets/images/tax.png' width={50} height={50} alt='book keeping' className='' /></div>
-                        <p className='font-black text-2xl '>Tax Planning And Preparation</p>
+                        <p className='font-black text-xl '>Tax Planning And Preparation</p>
                     </div>
-                    <div className='flex flex-col justify-start items-start border-1 p-10 rounded-3xl'>
+                    <div className='flex flex-col justify-start items-start border-1 border-amber-400 p-10 rounded-3xl'>
                     <div className='bg-amber-400 p-6 rounded-4xl mb-4'><Image src='/assets/images/consultation.png' width={50} height={50} alt='book keeping' className='' /></div>
-                        <p className='font-black text-2xl'>Business Advisory Service</p>
+                        <p className='font-black text-xl'>Business Advisory Service</p>
                     </div>
-                    <div className='flex flex-col justify-start items-start border-1 p-10 rounded-3xl'>
+                    <div className='flex flex-col justify-start items-start border-1 border-amber-400 p-10 rounded-3xl'>
                         <div className='bg-amber-400 p-6 rounded-4xl mb-4'><Image src='/assets/images/evaluation.png' width={50} height={50} alt='book keeping' className='' /></div>
-                        <p className='font-black text-2xl'>Financial Statement Preparation</p>
+                        <p className='font-black text-xl'>Financial Statement Preparation</p>
                     </div>                  
                 </div>
             </div>

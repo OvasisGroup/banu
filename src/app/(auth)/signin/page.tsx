@@ -50,7 +50,7 @@ const SignIn = async () => {
                                 placeholder="Enter your password"
                             />
                         </div>
-                        <Button className='hover:cursor-pointer bg-amber-400 text-black font-bold py-6 hover:bg-white border-amber-400 border-1 w-full' >Sign In</Button>
+                        <Button className='hover:cursor-pointer bg-amber-400 text-black font-bold py-6 hover:bg-white border-amber-400 border-1 w-full' >Get Started</Button>
                     </form>
                     <p className='mt-4'>Already Registered? <span><Link href={'/signup'} className='font-bold text-amber-400'>Sign Up</Link></span></p>
                 </div>

@@ -47,7 +47,7 @@ useEffect(() => {
             Contacts
           </Link>
           <Link href="/dashboard" className="text-gray-700 hover:text-blue-500">
-          <Button className='border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight className='bg-white rounded'/></Button>
+          <Button className='border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
           </Link>
         </div>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -72,7 +72,7 @@ useEffect(() => {
             Contacts <ArrowUpRight className='text-amber-400'/>
           </Link>
           <Link href="/dashboard" className="block flex flex-row justify-between text-gray-700 hover:text-blue-500">
-          <Button className='w-full border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight className='bg-white rounded'/></Button>
+          <Button className='w-full border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
           </Link>
         </div>
       )}
