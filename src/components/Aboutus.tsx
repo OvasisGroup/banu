@@ -45,7 +45,7 @@ export default function Aboutus() {
                         <p>Banu helps small business owners like you streamline bookkeeping and income taxes with dedicated experts and user-friendly financial software—saving you time and money so you can focus on growing your business. Our Services Include:</p>
                     </div>
                 </div>
-                <div className='grid md:grid-cols-4 gap-10 justify-center items-center my-10'>
+                <div className='grid md:grid-cols-4 gap-10 justify-center items-center mt-10 '>
                     <div className='flex flex-col justify-start items-start border-1 p-10 rounded-3xl'>
                     <div className='bg-amber-400 p-6 rounded-4xl mb-4'><Image src='/assets/images/book-keeping.png' width={50} height={50} alt='book keeping' className='' /></div>
                         <p className='font-black text-2xl '>Book Keeping And Accounting</p>
