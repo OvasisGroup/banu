@@ -43,7 +43,7 @@ useEffect(() => {
           <Link href="/" className="text-gray-900 hover:text-amber-400 font-bold">
             Pricing
           </Link>
-          <Link href="/" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/contacts" className="text-gray-900 hover:text-amber-400 font-bold">
             Contacts
           </Link>
           <Link href="/dashboard" className="text-gray-700 hover:text-blue-500">
@@ -68,7 +68,7 @@ useEffect(() => {
           <Link href="/" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
             Pricing <ArrowUpRight className='text-amber-400'/>
           </Link>
-          <Link href="/" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
+          <Link href="/contacts" className="block flex flex-row justify-between text-gray-900 hover:text-amber-400 font-bold mb-4 border-b-1 py-2">
             Contacts <ArrowUpRight className='text-amber-400'/>
           </Link>
           <Link href="/dashboard" className="block flex flex-row justify-between text-gray-700 hover:text-blue-500">

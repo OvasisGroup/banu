@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
-import nodemailer from 'nodemailer';
-
+import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
-    const { to, subject, text } = await req.json();
+    const { name, email, message } = await req.json();
 
-    if (!to || !subject || !text) {
-      return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
+    if (!name || !email || !message) {
+      return NextResponse.json({ message: "All fields are required" }, { status: 400 });
     }
 
     const transporter = nodemailer.createTransport({
@@ -20,9 +19,9 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to,
-      subject,
-      text,
+      to: process.env.EMAIL_USER,
+      subject: `New Inquiry From BANU Bookkeeping from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
 
     return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });
