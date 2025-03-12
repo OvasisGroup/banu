@@ -29,7 +29,7 @@ export default function Header() {
     }, []);
 
     return (
-        <section className=' min-h-170 flex justify-center items-center'>
+        <section className=' min-h-200 flex justify-center items-center'>
             <div className='container mx-auto px-4 grid md:grid-cols-2 gap-4 mt-10'>
                 <div ref={textRef} className='flex flex-col justify-center items-start md:max-w-xl'>
                     <h1 className='font-black md:text-5xl mb-3 text-3xl'>Reliable and transparent finances. Enjoy complete peace of mind.</h1>
