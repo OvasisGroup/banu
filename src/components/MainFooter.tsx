@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function MainFooter() {
   return (
-    <div className='bg-amber-400'>
-        <div className='container mx-auto px-4 py-4 flex md:flex-row flex-col md:justify-between md:items-center'>
+    <div className='bg-blue-600'>
+        <div className='container mx-auto px-4 py-4 flex md:flex-row flex-col md:justify-between md:items-center text-white'>
             <div>
             <p>Copyright © 2025, Banu. All rights reserved.</p>
             </div>

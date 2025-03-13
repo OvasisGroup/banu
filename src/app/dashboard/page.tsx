@@ -1,4 +1,4 @@
-import LogOut from "@/components/sign-out";
+
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 
@@ -8,7 +8,6 @@ const Dashboard = async () => {
 
   return (
     <div>Dashboard
-    <LogOut/>
     </div>
   )
 };

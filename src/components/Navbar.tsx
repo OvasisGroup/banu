@@ -31,23 +31,23 @@ useEffect(() => {
           <Image src='/assets/images/SVG/banu.svg' alt='logo' width={150} height={100} className='width={100}' />
         </Link>
         <div className="hidden md:flex space-x-6 justify-between items-center">
-          <Link href="/" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/" className="text-gray-900 hover:text-blue-600 font-bold">
             Home
           </Link>
-          <Link href="/services" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/services" className="text-gray-900 hover:text-blue-600 font-bold">
             Services
           </Link>
-          <Link href="/about" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/about" className="text-gray-900 hover:text-blue-600 font-bold">
             About Us
           </Link>
-          <Link href="/" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/" className="text-gray-900 hover:text-blue-600 font-bold">
             Pricing
           </Link>
-          <Link href="/contacts" className="text-gray-900 hover:text-amber-400 font-bold">
+          <Link href="/contacts" className="text-gray-900 hover:text-blue-600 font-bold">
             Contacts
           </Link>
-          <Link href="/dashboard" className="text-gray-700 hover:text-blue-500">
-          <Button className='border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
+          <Link href="/dashboard" className="text-gray-700 hover:text-bg-blue-600">
+          <Button className=' bg-blue-900 hover:bg-blue-600 text-white cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
           </Link>
         </div>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -72,7 +72,7 @@ useEffect(() => {
             Contacts <ArrowUpRight className='text-amber-400'/>
           </Link>
           <Link href="/dashboard" className="block flex flex-row justify-between text-gray-700 hover:text-blue-500">
-          <Button className='w-full border-2 border-amber-400 bg-amber-400 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
+          <Button className='w-full border-2 border-amber-400 bg-teal-800 hover:bg-white text-black cursor-pointer p-6 font-bold'>Get Started <ArrowUpRight/></Button>
           </Link>
         </div>
       )}

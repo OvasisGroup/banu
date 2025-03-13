@@ -6,7 +6,7 @@ import React from 'react'
 // import { EyeIcon, EyeOffIcon } from "lucide-react";
 
 import Login from '@/components/sign-in'
-import { auth } from '@/lib/auth'
+import { auth, signIn } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 
 const SignIn = async () => {
@@ -28,14 +28,17 @@ const SignIn = async () => {
                         <Image src='/assets/images/SVG/banu.svg' alt='logo' width={150} height={100} className='' />
                     </Link>
 
-                    <Login/>
+                    <Login />
 
                     <div className="flex items-center gap-4 mt-6 w-full">
                         <div className="flex-1 border-t border-amber-400 w-full"></div>
                         <span className="text-gray-500">or continue with</span>
                         <div className="flex-1 border-t border-amber-400"></div>
                     </div>
-                    <form className='mt-10 flex flex-col gap-4 w-full'>
+                    <form action={async () => {
+                        "use server"
+                        await signIn("credentials")
+                    }} className='mt-10 flex flex-col gap-4 w-full'>
                         <div>
                             <input
                                 type="email"
@@ -50,7 +53,7 @@ const SignIn = async () => {
                                 placeholder="Enter your password"
                             />
                         </div>
-                        <Button className='hover:cursor-pointer bg-amber-400 text-black font-bold py-6 hover:bg-white border-amber-400 border-1 w-full' >Get Started</Button>
+                        <Button className='hover:cursor-pointer bg-teal-900 text-black font-bold py-6 hover:bg-white border-amber-400 border-1 w-full' >Get Started</Button>
                     </form>
                     <p className='mt-4'>Already Registered? <span><Link href={'/signup'} className='font-bold text-amber-400'>Sign Up</Link></span></p>
                 </div>

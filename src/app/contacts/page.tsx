@@ -47,7 +47,7 @@ export default function ContactForm() {
             <div className="container mx-auto px-4 py-8">
                 <div className='grid md:grid-cols-2 gap-4 justify-center items-center'>
                     <div className='flex flex-col justify-center items-start'>
-                        <small className='text-amber-400 font-bold'>GET IN TOUCH</small>
+                        <small className='text-blue-600 font-black'>GET IN TOUCH</small>
                         <h1 className='font-black md:text-4xl text-3xl md:max-w-md'>Need help? <br />Let us get
                             intouch</h1>
                     </div>
@@ -60,7 +60,7 @@ export default function ContactForm() {
             <section className="container mx-auto px-4 py-8 grid md:grid-cols-2 gap-6">
                 <div className="md:mr-20">
                     <Image src="/assets/images/conta.jpg" alt="logo" width={1920} height={100} className="rounded-3xl mb-4 mr-10"  />
-                    <h3 className="font-bold text-amber-400 text-2xl">Say Hello!</h3>
+                    <h3 className="font-bold text-blue-600 text-2xl">Say Hello!</h3>
                     <p>+1 (614) 285‑9445</p>
                     <p>info@banubookkeeping.com</p>
                 </div>
@@ -94,7 +94,7 @@ export default function ContactForm() {
                     />
                     <Button
                         type="submit"
-                        className="bg-amber-400 hover:bg-white text-black font-bold border-1 hover:cursor-pointer border-amber-400 p-2 w-full"
+                        className="bg-blue-900 hover:bg-blue-600 text-white font-bold border-1 hover:cursor-pointer p-2 w-full"
                         disabled={loading}
                     >
                         {loading ? "Sending..." : "Send Message"}
