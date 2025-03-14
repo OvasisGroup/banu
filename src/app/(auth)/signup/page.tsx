@@ -1,12 +1,13 @@
 'use client'
-import { Button } from '@/components/ui/button'
+// import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
-import { EyeIcon, EyeOffIcon } from "lucide-react";
+import React from 'react'
+// import { EyeIcon, EyeOffIcon } from "lucide-react";
+import { ProfileForm } from '@/components/auth/register-form'
 
 const SignUp = () => {
-    const [showPassword, setShowPassword] = useState(false);
+    // const [showPassword, setShowPassword] = useState(false);
 
     return (
         <div className='grid md:grid-cols-2'>
@@ -17,7 +18,11 @@ const SignUp = () => {
             </div>
             </div>
             <div className='flex flex-col gap-4 justify-center items-center md:w-xl w-full px-6 mx-auto h-screen'>
-                <div className='w-full flex flex-col justify-center items-center'>
+            <Link href="/" className="text-2xl font-bold text-black mb-10">
+                        <Image src='/assets/images/SVG/banu.svg' alt='logo' width={150} height={100} className='' />
+                    </Link>
+                <ProfileForm/>
+                {/* <div className='w-full flex flex-col justify-center items-center'>
 
                     <Link href="/" className="text-2xl font-bold text-black mb-10">
                         <Image src='/assets/images/SVG/banu.svg' alt='logo' width={150} height={100} className='' />
@@ -78,7 +83,7 @@ const SignUp = () => {
                         <Button className='hover:cursor-pointer bg-amber-400 text-black font-bold py-6 hover:bg-white border-amber-400 border-1'  w-full>Sign Up</Button>
                     </form>
                     <p className='mt-4'>Already Registered? <span><Link href={'/signin'} className='font-bold text-amber-400'>Sign In</Link></span></p>
-                </div>
+                </div> */}
             </div>
         </div>
     )

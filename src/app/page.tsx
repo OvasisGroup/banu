@@ -1,9 +1,11 @@
 import Aboutus from "@/components/Aboutus";
 import Break from "@/components/Break";
 import Footer from "@/components/Footer";
+import GetStarted from "@/components/GetStarted";
 import Header from "@/components/header";
 import MainFooter from "@/components/MainFooter";
 import Navbar from "@/components/Navbar";
+import WhyUs from "@/components/WhyUs";
 
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <Header/>
       <Aboutus/>
       <Break/>
+      <WhyUs/>
+      <GetStarted/>
       <Footer/>
       <MainFooter/>
     </div>

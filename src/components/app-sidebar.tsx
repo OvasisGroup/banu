@@ -11,7 +11,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { SignOut } from "./sign-out"
+
 
 
 
@@ -84,7 +84,7 @@ export function AppSidebar() {
                 <SidebarGroup />
             </SidebarContent>
             <SidebarFooter>
-<SignOut/>
+signout
             </SidebarFooter>
         </Sidebar>
     )

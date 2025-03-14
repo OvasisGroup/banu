@@ -3,7 +3,7 @@ import React from 'react'
 export default function Break() {
   return (
     <div className='bg-white'>
-        <div className='mx-4 md:mx-0 mb-10 bg-white'>
+        <div className='mx-4 md:mx-0  bg-white'>
         <div className='container mx-auto bg-[url("/assets/images/break-bg.jpg")] bg-no-repeat bg-cover bg-center rounded-3xl py-10'>
             <div className='grid md:grid-cols-2 justify-end items-end p-10'>
                 <div className=''>
@@ -15,7 +15,7 @@ export default function Break() {
                     <h1 className='font-black text-3xl text-blue-400'>12 Years</h1>
                     <p className='font-bold text-white'>in accounting services</p>
                 </div>
-            </div>
+            </div>   
         </div>
         </div>
     </div>
