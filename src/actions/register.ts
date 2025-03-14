@@ -25,6 +25,7 @@ export const register = async (data: z.infer<typeof RegisterSchema>) => {
         const userExists = await prisma.user.findFirst({
             where: {
                 email,
+                name,
             },
         });
 
@@ -33,10 +34,11 @@ export const register = async (data: z.infer<typeof RegisterSchema>) => {
         }
 
         const lowerCaseEmail = email.toLowerCase();
+        const lowerCaseName = name.toLowerCase();
 
         const user = await prisma.user.create({
             data: {
-                name,
+                name: lowerCaseName,
                 email: lowerCaseEmail,
                 password: hashedPassword,
                 role: "USER",
