@@ -42,10 +42,12 @@ export const register = async (data: z.infer<typeof RegisterSchema>) => {
                 role: "USER",
             },
         })
-        return { user };
+        return { success: "user created successfully" };
+        console.log(user)
         
     } catch (error) {
-        console.error("Error creating user:", error);
+        console.error(error);
+        return { error: "Something went wrong" };
     }
     
 }

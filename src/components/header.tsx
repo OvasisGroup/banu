@@ -32,9 +32,9 @@ export default function Header() {
         <section className=' min-h-200 flex justify-center items-center'>
             <div className='container mx-auto px-4 grid md:grid-cols-2 gap-4 mt-10'>
                 <div ref={textRef} className='flex flex-col justify-center items-start md:max-w-xl'>
-                    <h1 className='font-black md:text-5xl mb-3 text-3xl text-blue-900'>Reliable and transparent finances. Enjoy complete peace of mind.</h1>
+                    <h1 className='font-black md:text-5xl mb-3 text-3xl text-teal-900'>Reliable and transparent finances. Enjoy complete peace of mind.</h1>
                     <p>Banu helps small business owners like you streamline bookkeeping and income taxes with dedicated experts and user-friendly financial software—saving you time and money so you can focus on growing your business.</p>
-                    <div className='flex flex-row gap-4'><Button className='mt-4 border-2 border-blue-900 bg-blue-900 hover:bg-blue-600 hover:border-blue-600 text-white cursor-pointer py-6 px-10 font-bold'>Get Started <ArrowUpRight /></Button><Button className='mt-4 border-2 border-blue-600 bg-blue-600 text-white cursor-pointer py-6 px-6 font-bold hover:bg-blue-900 hover:border-blue-900'>Our Services <ArrowUpRight /></Button></div>
+                    <div className='flex flex-row gap-4'><Button className='mt-4 border-2 border-teal-900 bg-teal-900 hover:bg-teal-600 hover:border-teal-600 text-white cursor-pointer py-6 px-10 font-bold'>Get Started <ArrowUpRight /></Button><Button className='mt-4 border-2 border-teal-600 bg-teal-600 text-white cursor-pointer py-6 px-6 font-bold hover:bg-teal-900 hover:border-teal-900'>Our Services <ArrowUpRight /></Button></div>
                 </div>
                 <div className=''>
                     <Image ref={imageRef} src='/assets/images/hero-image.png' alt='hero' width={1000} height={400} />

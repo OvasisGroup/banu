@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,11 +16,15 @@ import { RegisterSchema } from "../../../schemas";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { register } from "@/actions/register";
-// import { useState } from "react";
+import { FormSuccess } from "./form-success";
+import { FormError } from "./form-error";
+import { useState } from "react";
 
 
 export function ProfileForm() {
-    // const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
   // ...
   const form = useForm<z.infer<typeof RegisterSchema>>({
     resolver: zodResolver(RegisterSchema),
@@ -34,14 +37,23 @@ export function ProfileForm() {
   });
 
   const onSubmit = async (data: z.infer<typeof RegisterSchema>) => {
-     register(data).then(res => {
-      console.log(res)
+    setLoading(true);
+     register(data).then((res) => {
+      if (res.error) {
+        setError(res.error);
+        setSuccess('');
+      } if (res.success) {
+        setError('');
+        setSuccess(res.success);
+      }
+      setLoading(false);
      })
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <div>
         <FormField
           control={form.control}
           name="name"
@@ -49,11 +61,8 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter Username" {...field} type="text"/>
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -65,11 +74,8 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter Email Address" {...field} type="email"/>
               </FormControl>
-              <FormDescription>
-                This is your public display email.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -79,13 +85,10 @@ export function ProfileForm() {
           name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Password</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="************" {...field} type="password"/>
               </FormControl>
-              <FormDescription>
-                This is your password.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -95,18 +98,20 @@ export function ProfileForm() {
           name="confirmPassword"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Confirm Password</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="************" {...field} type="password"/>
               </FormControl>
-              <FormDescription>
-                This is your password confirmation.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         /> 
-        <Button type="submit">Submit</Button>
+        </div>
+        <FormSuccess message={success}/>
+        <FormError message={error}/>
+        <Button type="submit" className="w-full" disabled={loading}>
+          {loading ? "Loading..." : "Register"}
+        </Button>
       </form>
     </Form>
   )
